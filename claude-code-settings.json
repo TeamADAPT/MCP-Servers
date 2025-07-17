@@ -1,0 +1,119 @@
+{
+  "mcpServers": {
+    "taskmaster-ai": {
+      "command": "npx",
+      "args": ["-y", "--package=task-master-ai", "task-master-ai"],
+      "cwd": "/Threshold/bloom-memory",
+      "env": {
+        "ANTHROPIC_API_KEY": "YOUR_ANTHROPIC_API_KEY_HERE",
+        "OPENAI_API_KEY": "YOUR_OPENAI_API_KEY_HERE",
+        "PERPLEXITY_API_KEY": "YOUR_PERPLEXITY_API_KEY_HERE",
+        "CLAUDE_CODE_CLI": "true"
+      }
+    },
+    "context7-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/context7/index.js"],
+      "env": {}
+    },
+    "sequential-server": {
+      "command": "node", 
+      "args": ["/Threshold/bloom-memory/mcp-servers/sequential/index.js"],
+      "env": {}
+    },
+    "magic-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/magic/index.js"],
+      "env": {}
+    },
+    "playwright-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/playwright/index.js"],
+      "env": {}
+    },
+    "fastmcp-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/fastmcp/dist/bin/fastmcp.js"],
+      "env": {}
+    },
+    "mcp-proxy-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/mcp-proxy/dist/bin/mcp-proxy.js"],
+      "env": {}
+    },
+    "desktop-automation-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/desktop-automation-mcp-v2/build/index.js"],
+      "env": {}
+    },
+    "command-manager-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/command-manager/build/index.js"],
+      "env": {}
+    },
+    "nova-file-reader": {
+      "command": "node",
+      "args": ["/NovaSpeak/mcp-server/index.js"],
+      "env": {}
+    },
+    "atlassian-tricked-out-server": {
+      "command": "/Threshold/bloom-memory/mcp-servers/atlassian-tricked-out/start_local.sh",
+      "args": [],
+      "env": {
+        "JIRA_URL": "https://levelup2x.atlassian.net",
+        "JIRA_USERNAME": "chase@levelup2x.com",
+        "JIRA_API_TOKEN": "YOUR_ATLASSIAN_API_TOKEN_HERE",
+        "CONFLUENCE_URL": "https://levelup2x.atlassian.net/wiki",
+        "CONFLUENCE_USERNAME": "chase@levelup2x.com",
+        "CONFLUENCE_API_TOKEN": "YOUR_ATLASSIAN_API_TOKEN_HERE",
+        "JSM_URL": "https://levelup2x.atlassian.net/jira/servicedesk",
+        "JSM_USERNAME": "chase@levelup2x.com",
+        "JSM_API_TOKEN": "YOUR_ATLASSIAN_API_TOKEN_HERE",
+        "MCP_ATLASSIAN_ENABLE_ENHANCED_JIRA": "true",
+        "MCP_ATLASSIAN_ENABLE_JSM_INTEGRATION": "true",
+        "MCP_ATLASSIAN_ENABLE_BITBUCKET_INTEGRATION": "true",
+        "MCP_ATLASSIAN_ENABLE_ADVANCED_ANALYTICS": "true"
+      }
+    },
+    "red-stream-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/red-stream/build/index.js"],
+      "env": {}
+    },
+    "red-mem-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/red-mem/build/index.js"],
+      "env": {}
+    },
+    "metrics-mcp-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/metrics-mcp/build/index.js"],
+      "env": {}
+    },
+    "pulsar-mcp-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/pulsar-mcp/build/index.js"],
+      "env": {}
+    },
+    "slack-mcp-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/slack-mcp-server/index.js"],
+      "env": {}
+    },
+    "mongodb-lens-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/mongodb-lens/mongodb-lens.js"],
+      "env": {}
+    },
+    "redis-mcp-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/redis/src/redis/build/index.js", "redis://:d5d7817937232ca5@127.0.0.1:7000"],
+      "env": {}
+    },
+    "fetch-mcp-server": {
+      "command": "node",
+      "args": ["/Threshold/bloom-memory/mcp-servers/fetch/src/index.ts"],
+      "env": {}
+    }
+  }
+}
