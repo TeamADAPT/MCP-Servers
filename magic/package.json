@@ -1,0 +1,21 @@
+{
+  "name": "magic-mcp-server",
+  "version": "1.0.0",
+  "description": "Magic MCP Server - UI Components & Design server for modern UI component generation, design system integration",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["mcp", "ui", "components", "design", "magic", "react", "vue", "angular"],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "axios": "^1.6.0",
+    "uuid": "^9.0.1",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

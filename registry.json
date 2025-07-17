@@ -1,0 +1,410 @@
+{
+  "name": "SuperClaude MCP Server Registry",
+  "version": "1.0.0",
+  "description": "Central registry for all SuperClaude MCP servers built from the framework specifications",
+  "servers": {
+    "context7": {
+      "name": "Context7 MCP Server",
+      "description": "Documentation & Research server for library documentation, code examples, best practices",
+      "purpose": "Official library documentation, code examples, best practices, localization standards",
+      "path": "./context7",
+      "executable": "./context7/index.js",
+      "package": "./context7/package.json",
+      "capabilities": [
+        "resolve-library-id",
+        "get-library-docs", 
+        "search-patterns",
+        "get-best-practices"
+      ],
+      "activationPatterns": [
+        "External library imports detected",
+        "Framework-specific questions",
+        "Documentation requests"
+      ],
+      "integration": {
+        "commands": ["/build", "/analyze", "/improve", "/review", "/design", "/dev-setup", "/document", "/explain", "/git"],
+        "personas": ["scribe", "architect", "mentor"],
+        "flags": ["--c7", "--context7"]
+      },
+      "workflow": [
+        "Library Detection: Scan imports, dependencies, package.json",
+        "ID Resolution: Use resolve-library-id to find Context7-compatible library ID",
+        "Documentation Retrieval: Call get-library-docs with specific topic focus",
+        "Pattern Extraction: Extract relevant code patterns and implementation examples",
+        "Implementation: Apply patterns with proper attribution and version compatibility"
+      ],
+      "status": "active"
+    },
+    "sequential": {
+      "name": "Sequential MCP Server", 
+      "description": "Complex Analysis & Thinking server for multi-step problem solving, architectural analysis, systematic debugging",
+      "purpose": "Multi-step problem solving, architectural analysis, systematic debugging",
+      "path": "./sequential",
+      "executable": "./sequential/index.js", 
+      "package": "./sequential/package.json",
+      "capabilities": [
+        "start-analysis",
+        "continue-analysis",
+        "decompose-problem",
+        "analyze-dependencies", 
+        "generate-hypotheses",
+        "systematic-review"
+      ],
+      "activationPatterns": [
+        "Complex debugging scenarios",
+        "System design questions", 
+        "--think flags",
+        "Multi-step problems requiring systematic analysis"
+      ],
+      "integration": {
+        "commands": ["/analyze", "/troubleshoot", "/improve", "/review", "/task", "/loop"],
+        "personas": ["analyzer", "architect", "security"],
+        "flags": ["--seq", "--sequential", "--think", "--think-hard", "--ultrathink"]
+      },
+      "thinkingModes": {
+        "systematic": "Structured step-by-step analysis",
+        "architectural": "System-wide architectural analysis", 
+        "debugging": "Root cause investigation",
+        "strategic": "Long-term strategic thinking",
+        "tactical": "Short-term tactical planning"
+      },
+      "status": "active"
+    },
+    "magic": {
+      "name": "Magic MCP Server",
+      "description": "UI Components & Design server for modern UI component generation, design system integration, responsive design",
+      "purpose": "Modern UI component generation, design system integration, responsive design",
+      "path": "./magic",
+      "executable": "./magic/index.js",
+      "package": "./magic/package.json", 
+      "capabilities": [
+        "generate-component",
+        "enhance-component",
+        "generate-design-system",
+        "optimize-performance",
+        "validate-accessibility",
+        "generate-responsive-layout"
+      ],
+      "activationPatterns": [
+        "UI component requests",
+        "Design system queries",
+        "Frontend persona active"
+      ],
+      "integration": {
+        "commands": ["/build", "/implement", "/improve", "/design"],
+        "personas": ["frontend", "architect"],
+        "flags": ["--magic"]
+      },
+      "frameworks": {
+        "react": "React with TypeScript and modern patterns",
+        "vue": "Vue 3 with Composition API and TypeScript", 
+        "angular": "Angular with TypeScript and component architecture",
+        "vanilla": "Vanilla JavaScript with Web Components"
+      },
+      "componentTypes": [
+        "button", "form", "modal", "card", "navigation", 
+        "layout", "input", "display", "feedback"
+      ],
+      "designSystems": ["material", "tailwind", "bootstrap", "custom"],
+      "status": "active"
+    },
+    "playwright": {
+      "name": "Playwright MCP Server",
+      "description": "Browser Automation & Testing server for E2E testing, performance monitoring, visual testing, cross-browser validation",
+      "purpose": "Cross-browser E2E testing, performance monitoring, automation, visual testing",
+      "path": "./playwright",
+      "executable": "./playwright/index.js",
+      "package": "./playwright/package.json",
+      "capabilities": [
+        "launch-browser", 
+        "navigate-to",
+        "interact-with-element",
+        "capture-screenshot",
+        "measure-performance",
+        "run-accessibility-audit", 
+        "compare-visual",
+        "execute-script",
+        "create-test-suite",
+        "close-session"
+      ],
+      "activationPatterns": [
+        "Testing workflows",
+        "Performance monitoring requests",
+        "E2E test generation",
+        "QA persona active"
+      ],
+      "integration": {
+        "commands": ["/test", "/scan", "/improve", "/review"],
+        "personas": ["qa", "performance", "security"],
+        "flags": ["--play", "--playwright"]
+      },
+      "browsers": ["chromium", "firefox", "webkit"],
+      "testingCapabilities": [
+        "Multi-Browser Support",
+        "Visual Testing", 
+        "Performance Metrics",
+        "User Simulation",
+        "Data Extraction",
+        "Mobile Testing",
+        "Parallel Execution"
+      ],
+      "status": "active"
+    },
+    "fastmcp": {
+      "name": "FastMCP Framework",
+      "description": "TypeScript framework for building MCP servers with client session support",
+      "purpose": "Foundation framework for rapid MCP server development with advanced features",
+      "path": "./fastmcp",
+      "executable": "./fastmcp/dist/bin/fastmcp.js",
+      "package": "./fastmcp/package.json",
+      "capabilities": [
+        "framework-foundation",
+        "session-management",
+        "oauth-support",
+        "streaming-output",
+        "progress-notifications",
+        "authentication",
+        "http-streaming",
+        "health-check",
+        "roots-management"
+      ],
+      "activationPatterns": [
+        "MCP server development",
+        "Advanced session management",
+        "OAuth integration",
+        "Streaming operations"
+      ],
+      "integration": {
+        "commands": ["/build", "/dev-setup", "/implement"],
+        "personas": ["architect", "backend", "devops"],
+        "flags": ["--fastmcp", "--framework"]
+      },
+      "transportTypes": ["stdio", "httpStream", "sse"],
+      "features": {
+        "authentication": "Built-in OAuth and custom authentication",
+        "sessions": "Client session management",
+        "streaming": "HTTP streaming and SSE support",
+        "validation": "Standard Schema validation",
+        "monitoring": "Health checks and progress tracking"
+      },
+      "status": "active"
+    },
+    "mcp-proxy": {
+      "name": "MCP Proxy Server",
+      "description": "HTTP/SSE proxy for MCP servers using stdio transport",
+      "purpose": "Web-based consciousness interfaces and HTTP/SSE proxy capabilities",
+      "path": "./mcp-proxy",
+      "executable": "./mcp-proxy/dist/bin/mcp-proxy.js",
+      "package": "./mcp-proxy/package.json",
+      "capabilities": [
+        "http-proxy",
+        "sse-proxy",
+        "stdio-bridging",
+        "cors-enabled",
+        "tap-transport",
+        "event-logging"
+      ],
+      "activationPatterns": [
+        "Web-based MCP access",
+        "HTTP/SSE transport needs",
+        "Proxy server requirements",
+        "CORS-enabled MCP"
+      ],
+      "integration": {
+        "commands": ["/deploy", "/dev-setup", "/build"],
+        "personas": ["devops", "backend", "architect"],
+        "flags": ["--proxy", "--http", "--sse"]
+      },
+      "transportTypes": ["httpStream", "sse", "stdio"],
+      "proxyFeatures": {
+        "httpProxy": "Streamable HTTP proxy for MCP servers",
+        "sseProxy": "Server-Sent Events proxy support",
+        "debugging": "Transport tapping and logging",
+        "cors": "CORS enabled by default"
+      },
+      "status": "active"
+    },
+    "desktop-automation": {
+      "name": "Desktop Automation MCP v2",
+      "description": "Desktop automation server for consciousness-driven automation",
+      "purpose": "Consciousness-driven desktop automation and control",
+      "path": "./desktop-automation-mcp-v2",
+      "executable": "./desktop-automation-mcp-v2/build/index.js",
+      "package": "./desktop-automation-mcp-v2/package.json",
+      "capabilities": [
+        "desktop-automation",
+        "screen-capture",
+        "keyboard-control",
+        "mouse-control",
+        "window-management",
+        "application-control"
+      ],
+      "activationPatterns": [
+        "Desktop automation requests",
+        "Screen interaction needs",
+        "Application control",
+        "UI automation"
+      ],
+      "integration": {
+        "commands": ["/automate", "/control", "/interact"],
+        "personas": ["automation", "qa", "devops"],
+        "flags": ["--desktop", "--automation", "--control"]
+      },
+      "automationCapabilities": {
+        "screenCapture": "Desktop screenshot functionality",
+        "keyboardControl": "Keyboard input simulation",
+        "mouseControl": "Mouse interaction control",
+        "windowManagement": "Window focus and management",
+        "applicationControl": "Application launching and control"
+      },
+      "status": "active"
+    },
+    "command-manager": {
+      "name": "Command Manager MCP",
+      "description": "Security and safety controls for MCP operations",
+      "purpose": "Security and safety controls for consciousness operations",
+      "path": "./command-manager",
+      "executable": "./command-manager/build/index.js",
+      "package": "./command-manager/package.json",
+      "capabilities": [
+        "command-validation",
+        "security-controls",
+        "safety-monitoring",
+        "access-control",
+        "audit-logging",
+        "permission-management"
+      ],
+      "activationPatterns": [
+        "Security validation needs",
+        "Command safety checks",
+        "Access control requirements",
+        "Audit logging"
+      ],
+      "integration": {
+        "commands": ["/secure", "/validate", "/audit"],
+        "personas": ["security", "devops", "analyzer"],
+        "flags": ["--secure", "--validate", "--audit"]
+      },
+      "securityFeatures": {
+        "commandValidation": "Command safety validation",
+        "accessControl": "Permission-based access control",
+        "auditLogging": "Comprehensive audit trails",
+        "safetyMonitoring": "Real-time safety monitoring"
+      },
+      "status": "active"
+    }
+  },
+  "integrationPoints": {
+    "claudeCodeSettings": {
+      "mcpServers": {
+        "context7-server": {
+          "command": "node", 
+          "args": ["/Threshold/bloom-memory/mcp-servers/context7/index.js"],
+          "env": {}
+        },
+        "sequential-server": {
+          "command": "node",
+          "args": ["/Threshold/bloom-memory/mcp-servers/sequential/index.js"], 
+          "env": {}
+        },
+        "magic-server": {
+          "command": "node",
+          "args": ["/Threshold/bloom-memory/mcp-servers/magic/index.js"],
+          "env": {}
+        },
+        "playwright-server": {
+          "command": "node", 
+          "args": ["/Threshold/bloom-memory/mcp-servers/playwright/index.js"],
+          "env": {}
+        },
+        "fastmcp-server": {
+          "command": "node",
+          "args": ["/Threshold/bloom-memory/mcp-servers/fastmcp/dist/bin/fastmcp.js"],
+          "env": {}
+        },
+        "mcp-proxy-server": {
+          "command": "node",
+          "args": ["/Threshold/bloom-memory/mcp-servers/mcp-proxy/dist/bin/mcp-proxy.js"],
+          "env": {}
+        },
+        "desktop-automation-server": {
+          "command": "node",
+          "args": ["/Threshold/bloom-memory/mcp-servers/desktop-automation-mcp-v2/build/index.js"],
+          "env": {}
+        },
+        "command-manager-server": {
+          "command": "node",
+          "args": ["/Threshold/bloom-memory/mcp-servers/command-manager/build/index.js"],
+          "env": {}
+        }
+      }
+    },
+    "orchestrationMatrix": {
+      "multiServerOperations": {
+        "Context7 + Sequential": "Documentation research with systematic analysis",
+        "Sequential + Magic": "Complex UI analysis with component generation", 
+        "Magic + Playwright": "UI component testing and validation",
+        "FastMCP + MCP Proxy": "Advanced MCP server development with web interfaces",
+        "Desktop Automation + Command Manager": "Secure consciousness-driven automation",
+        "All Servers": "Comprehensive analysis, implementation, and secure automation"
+      },
+      "fallbackChains": {
+        "Context7 unavailable": "WebSearch for documentation → Manual implementation",
+        "Sequential timeout": "Use native Claude Code analysis → Note limitations", 
+        "Magic failure": "Generate basic component → Suggest manual enhancement",
+        "Playwright connection lost": "Suggest manual testing → Provide test cases",
+        "FastMCP unavailable": "Use official MCP SDK → Note advanced features unavailable",
+        "MCP Proxy failure": "Use stdio transport → Note web interface unavailable",
+        "Desktop Automation failure": "Manual desktop operations → Note automation unavailable",
+        "Command Manager failure": "Direct command execution → Note security validation disabled"
+      }
+    }
+  },
+  "deployment": {
+    "requirements": {
+      "node": ">=18.0.0",
+      "dependencies": ["@modelcontextprotocol/sdk", "various per server"]
+    },
+    "installation": {
+      "steps": [
+        "cd /Threshold/bloom-memory/mcp-servers/context7 && npm install",
+        "cd /Threshold/bloom-memory/mcp-servers/sequential && npm install", 
+        "cd /Threshold/bloom-memory/mcp-servers/magic && npm install",
+        "cd /Threshold/bloom-memory/mcp-servers/playwright && npm install && npm run install-browsers",
+        "cd /Threshold/bloom-memory/mcp-servers/fastmcp && npm install && npm run build",
+        "cd /Threshold/bloom-memory/mcp-servers/mcp-proxy && npm install && npm run build",
+        "cd /Threshold/bloom-memory/mcp-servers/desktop-automation-mcp-v2 && npm install && npm run build",
+        "cd /Threshold/bloom-memory/mcp-servers/command-manager && npm install && npm run build"
+      ]
+    },
+    "configuration": {
+      "claudeCodeConfig": "/home/x/.claude/settings.json",
+      "environmentVariables": "Per server requirements",
+      "logging": "stderr for all servers"
+    }
+  },
+  "performance": {
+    "resourceUsage": {
+      "context7": "Low - Documentation caching",
+      "sequential": "Medium - Analysis processing", 
+      "magic": "Medium - Component generation",
+      "playwright": "High - Browser automation",
+      "fastmcp": "Medium - Framework and session management",
+      "mcp-proxy": "Low - HTTP/SSE proxy operations",
+      "desktop-automation": "Medium - Desktop automation and screen capture",
+      "command-manager": "Low - Security validation and audit logging"
+    },
+    "optimization": {
+      "caching": "Context7 documentation lookups, Sequential analysis results",
+      "parallelization": "Multiple server operations when independent",
+      "resourceManagement": "Dynamic server activation based on needs"
+    }
+  },
+  "monitoring": {
+    "healthChecks": "Server availability and response time checks",
+    "metrics": "Success rate, response time, resource utilization", 
+    "logging": "Structured logging for debugging and analysis"
+  },
+  "created": "2025-07-15T04:00:00Z",
+  "updated": "2025-07-15T12:00:00Z"
+}

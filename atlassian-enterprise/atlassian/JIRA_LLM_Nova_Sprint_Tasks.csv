@@ -1,0 +1,22 @@
+Team,Jira Task Summary
+NovaOps,Define Nova task schema and metadata format
+NovaOps,Build task initiator module with event triggers
+NovaOps,Implement decision engine logic
+NovaOps,Interface with memory for logging results and updating state
+CognitiveOps,"Implement Task Analyzer: classify task type, extract intent"
+CognitiveOps,Design semantic routing input format (to RouteOps)
+CognitiveOps,"Build response aggregator to rank, filter, ensemble outputs"
+CognitiveOps,Prototype LLM-as-judge model (optional)
+RouteOps,Build capability registry with LLM traits and scoring metadata
+RouteOps,Integrate vector-based task-to-LLM match logic
+RouteOps,Establish interface to receive hints from CognitiveOps
+MemOps,Implement short/long-term memory retrieval API
+MemOps,Create prompt pre-processor for memory context
+MemOps,Store Nova outputs and LLM performance logs
+MemOps,Integrate with QuantOps for fine-tuning datasets
+CommsOps,Build async dispatcher for parallel LLM calls
+CommsOps,Add timeout/fallback logic for slow LLMs
+CommsOps,"Log latency, token usage, and error metrics"
+QuantOps,"Score LLMs by success rate, task type, and latency"
+QuantOps,Build dashboard for LLM performance mapping
+QuantOps,Suggest LLMs for retraining or replacement

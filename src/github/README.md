@@ -210,53 +210,7 @@ MCP Server for the GitHub API, enabling file operations, repository management, 
 - `location:London`: Search by location
 - Example: `q: "fullstack developer" location:London followers:>100`
 
-For detailed search syntax, see [GitHub's searching documentation](https://docs.github.com/en/search-github/searching-on-github).
-
-## Setup
-
-### Personal Access Token
-[Create a GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with appropriate permissions:
-   - Go to [Personal access tokens](https://github.com/settings/tokens) (in GitHub Settings > Developer settings)
-   - Select which repositories you'd like this token to have access to (Public, All, or Select)
-   - Create a token with the `repo` scope ("Full control of private repositories")
-     - Alternatively, if working only with public repositories, select only the `public_repo` scope
-   - Copy the generated token
-
-### Usage with Claude Desktop
-To use this with Claude Desktop, add the following to your `claude_desktop_config.json`:
-
-#### Docker
-```json
-{
-  "mcpServers": {
-    "github": {
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "-e",
-        "GITHUB_PERSONAL_ACCESS_TOKEN",
-        "mcp/github"
-      ],
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>"
-      }
-    }
-  }
-}
-```
-
-### NPX
-
-```json
-{
-  "mcpServers": {
-    "github": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-github"
+For detailed search syntax, see [GitHub's searching documentation](https://YOUR-CREDENTIALS@YOUR-DOMAIN/server-github"
       ]
     },
     "env": {

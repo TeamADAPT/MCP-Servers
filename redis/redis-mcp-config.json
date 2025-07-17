@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "redis-mcp": {
+      "autoApprove": [
+        "set",
+        "get",
+        "delete",
+        "list",
+        "stream_publish",
+        "stream_read"
+      ],
+      "disabled": false,
+      "timeout": 60,
+      "command": "node",
+      "args": [
+        "/data-nova/ax/DevOps/mcp/mcp-servers/database-mcp-servers/redis/mcp-redis-server/src/fixed-index.js"
+      ],
+      "env": {
+        "REDIS_HOST": "localhost",
+        "REDIS_PORT": "6380",
+        "REDIS_NAMESPACE_PREFIX": "dev:"
+      },
+      "transportType": "stdio"
+    }
+  }
+}

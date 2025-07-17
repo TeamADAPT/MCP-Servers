@@ -1,0 +1,21 @@
+{
+  "name": "context7-mcp-server",
+  "version": "1.0.0",
+  "description": "Context7 MCP Server - Documentation & Research server for library documentation, code examples, best practices",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["mcp", "documentation", "research", "context7"],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

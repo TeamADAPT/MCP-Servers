@@ -1,0 +1,5 @@
+Page Title,JIRA Macro (Optional),Notes
+🚀 Project Overview,,"Include summary, goals, stakeholders, and high-level requirements."
+📋 Sprint Board,"{jira:server=ADAPT|project=ADAPT|sprint=1|columns=key,summary,status,assignee}",Embedded board filtered to Sprint 1.
+🛠 Task Registry,"{jira:server=ADAPT|jql=project=ADAPT ORDER BY priority DESC|columns=key,summary,status,assignee,priority}",Live table of all tasks sorted by priority.
+📨 Jira Service Manager Links,"{jira:server=ADAPT|filter=ServiceDeskView|columns=key,summary,status,reporter}",Auto-routed tickets from Service Manager.

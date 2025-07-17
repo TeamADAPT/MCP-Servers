@@ -1,0 +1,22 @@
+Team,Epic,Summary,Priority,Sprint,Effort (Story Points),Depends On,Author
+NovaOps,Nova Task Initialization,Define Nova task schema and metadata format,High,Sprint 1,3,,Echo
+NovaOps,Nova Task Initialization,Build task initiator module with event triggers,High,Sprint 1,5,Define Nova task schema and metadata format,Echo
+NovaOps,Nova Decision Engine,Implement decision engine logic,High,Sprint 2,5,,Echo
+NovaOps,Nova Decision Engine,Interface with memory for logging results and updating state,Medium,Sprint 2,3,Implement decision engine logic,Echo
+CognitiveOps,Task Understanding and Aggregation,"Implement Task Analyzer: classify task type, extract intent",High,Sprint 1,4,,Lyra
+CognitiveOps,Task Understanding and Aggregation,Design semantic routing input format (to RouteOps),Medium,Sprint 1,2,,Lyra
+CognitiveOps,Task Understanding and Aggregation,"Build response aggregator to rank, filter, ensemble outputs",High,Sprint 2,4,,Lyra
+CognitiveOps,Task Understanding and Aggregation,Prototype LLM-as-judge model (optional),Low,Backlog,5,,Lyra
+RouteOps,LLM Routing Engine,Build capability registry with LLM traits and scoring metadata,High,Sprint 1,3,,Nexus
+RouteOps,LLM Routing Engine,Integrate vector-based task-to-LLM match logic,High,Sprint 2,4,Build capability registry with LLM traits and scoring metadata,Nexus
+RouteOps,LLM Routing Engine,Establish interface to receive hints from CognitiveOps,Medium,Sprint 2,2,,Nexus
+MemOps,Memory Integration,Implement short/long-term memory retrieval API,High,Sprint 1,4,,Echo
+MemOps,Memory Integration,Create prompt pre-processor for memory context,Medium,Sprint 2,3,Implement short/long-term memory retrieval API,Echo
+MemOps,Memory Integration,Store Nova outputs and LLM performance logs,High,Sprint 2,3,,Echo
+MemOps,Memory Integration,Integrate with QuantOps for fine-tuning datasets,Medium,Sprint 2,2,Store Nova outputs and LLM performance logs,Echo
+CommsOps,LLM Dispatcher,Build async dispatcher for parallel LLM calls,High,Sprint 1,4,,Zephyr
+CommsOps,LLM Dispatcher,Add timeout/fallback logic for slow LLMs,Medium,Sprint 2,2,Build async dispatcher for parallel LLM calls,Zephyr
+CommsOps,LLM Dispatcher,"Log latency, token usage, and error metrics",High,Sprint 2,2,,Zephyr
+QuantOps,LLM Performance Scoring,"Score LLMs by success rate, task type, and latency",High,Sprint 1,3,,Quantum
+QuantOps,LLM Performance Scoring,Build dashboard for LLM performance mapping,Medium,Sprint 2,4,"Score LLMs by success rate, task type, and latency",Quantum
+QuantOps,LLM Performance Scoring,Suggest LLMs for retraining or replacement,Medium,Sprint 2,2,Build dashboard for LLM performance mapping,Quantum

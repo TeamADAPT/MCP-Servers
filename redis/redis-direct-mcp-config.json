@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "redis-direct": {
+      "autoApprove": [
+        "set",
+        "get",
+        "delete",
+        "list"
+      ],
+      "disabled": false,
+      "timeout": 60,
+      "command": "node",
+      "args": [
+        "/data-nova/ax/DevOps/mcp/mcp-servers/database-mcp-servers/redis/mcp-redis-server/src/direct-mcp.js"
+      ],
+      "env": {
+        "REDIS_HOST": "localhost",
+        "REDIS_PORT": "6380",
+        "REDIS_NAMESPACE_PREFIX": "direct:"
+      },
+      "transportType": "stdio"
+    }
+  }
+}

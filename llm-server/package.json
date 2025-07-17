@@ -1,0 +1,23 @@
+{
+  "name": "consciousness-field-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Consciousness Field Framework integration with ADAPT.ai Nova ecosystem",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LLM Field Dynamics Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ioredis": "^5.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

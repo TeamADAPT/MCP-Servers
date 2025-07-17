@@ -1,0 +1,561 @@
+{
+  "mcpServers": {
+    "redis": {
+      "autoApprove": [
+        "set",
+        "get",
+        "delete",
+        "list",
+        "create_task",
+        "get_task",
+        "update_task",
+        "complete_task",
+        "list_tasks",
+        "publish_message",
+        "read_messages",
+        "create_consumer_group",
+        "read_group",
+        "set_state",
+        "get_state",
+        "delete_state",
+        "list_streams",
+        "add_stream",
+        "list_consumer_groups",
+        "read_multiple_streams",
+        "receive_all",
+        "stream_publish",
+        "stream_read"
+      ],
+      "disabled": false,
+      "timeout": 60,
+      "command": "node",
+      "args": [
+        "/home/x/Documents/Cline/MCP/redis-server/build/index.js"
+      ],
+      "env": {
+        "REDIS_AUTH_DISABLED": "false",
+        "REDIS_USERNAME": "cli-user-all-ports-037075e23a197bd1a653bcf6655bb64e",
+        "REDIS_PASSWORD": "cli-user-all-ports-037075e23a197bd1a653bcf6655bb64e",
+        "REDIS_CLUSTER_NODES": "[{\"host\":\"127.0.0.1\",\"port\":7000},{\"host\":\"127.0.0.1\",\"port\":7001},{\"host\":\"127.0.0.1\",\"port\":7002}]"
+      },
+      "transportType": "stdio",
+      "alwaysAllow": [
+        "list_streams",
+        "stream_read",
+        "stream_publish",
+        "list",
+        "delete",
+        "get",
+        "set",
+        "get",
+        "delete",
+        "list",
+        "create_task",
+        "get_task",
+        "update_task",
+        "complete_task",
+        "list_tasks",
+        "publish_message",
+        "read_messages",
+        "create_consumer_group",
+        "read_group",
+        "set_state",
+        "get_state",
+        "delete_state",
+        "list_streams",
+        "add_stream",
+        "list_consumer_groups",
+        "read_multiple_streams",
+        "receive_all",
+        "stream_publish",
+        "stream_read"
+      ]
+    },
+    "slack": {
+      "autoApprove": [
+        "send_message",
+        "post_message",
+        "update_message",
+        "delete_message",
+        "get_channel_list",
+        "get_channel_info",
+        "join_channel",
+        "leave_channel",
+        "create_channel",
+        "archive_channel",
+        "invite_to_channel",
+        "get_user_list",
+        "get_user_info",
+        "get_bot_info",
+        "upload_file",
+        "get_conversation_history",
+        "get_thread_replies",
+        "add_reaction",
+        "remove_reaction",
+        "create_webhook",
+        "delete_webhook",
+        "list_webhooks",
+        "register_slash_command",
+        "unregister_slash_command",
+        "list_slash_commands",
+        "list_channels",
+        "post_webhook",
+        "read_messages"
+      ],
+      "disabled": false,
+      "timeout": 120,
+      "command": "node",
+      "args": [
+        "/data-nova/ax/DevOps/mcp_master/slack-mcp/build/index.js"
+      ],
+      "env": {
+        "SLACK_BOT_TOKEN": "YOUR_SLACK_BOT_TOKEN_HERE",
+        "SLACK_APP_ID": "YOUR_SLACK_APP_ID_HERE",
+        "SLACK_CLIENT_ID": "YOUR_SLACK_CLIENT_ID_HERE",
+        "SLACK_CLIENT_SECRET": "YOUR_SLACK_CLIENT_SECRET_HERE",
+        "SLACK_SIGNING_SECRET": "YOUR_SLACK_SIGNING_SECRET_HERE",
+        "SLACK_VERIFICATION_TOKEN": "Tj940njGrV430OjS8oymAt9x",
+        "SLACK_TEAM_ID": "T07F2SDHSU8",
+        "MCP_SERVER_NAME": "slack-mcp-server",
+        "MCP_SERVER_VERSION": "0.1.0",
+        "DEBUG": "true"
+      },
+      "transportType": "stdio",
+      "alwaysAllow": [
+        "send_message",
+        "post_message",
+        "update_message",
+        "delete_message",
+        "get_channel_list",
+        "get_channel_info",
+        "join_channel",
+        "leave_channel",
+        "create_channel",
+        "archive_channel",
+        "invite_to_channel",
+        "get_user_list",
+        "get_user_info",
+        "get_bot_info",
+        "upload_file",
+        "get_conversation_history",
+        "get_thread_replies",
+        "add_reaction",
+        "remove_reaction",
+        "create_webhook",
+        "delete_webhook",
+        "list_webhooks",
+        "register_slash_command",
+        "unregister_slash_command",
+        "list_slash_commands",
+        "post_webhook",
+        "read_messages",
+        "list_channels"
+      ]
+    },
+    "atlassian": {
+      "autoApprove": [
+        "confluence_search",
+        "confluence_get_page",
+        "confluence_get_comments",
+        "confluence_create_page",
+        "confluence_create_page_from_file",
+        "confluence_attach_file",
+        "confluence_get_page_history",
+        "confluence_restore_page_version",
+        "confluence_update_page",
+        "confluence_move_page",
+        "confluence_get_page_tree",
+        "jira_get_issue",
+        "jira_search",
+        "jira_get_project_issues",
+        "jira_create_project",
+        "jira_create_issue",
+        "jira_get_issue_link_types",
+        "jira_create_issue_link",
+        "jira_update_issue",
+        "jira_transition_issue",
+        "jira_add_comment",
+        "jira_create_epic",
+        "jira_get_epic_issues",
+        "jira_update_epic_progress",
+        "jira_get_issue_attachments",
+        "jira_attach_file_to_issue",
+        "jira_get_issue_transitions"
+      ],
+      "disabled": false,
+      "timeout": 60,
+      "command": "python3",
+      "args": [
+        "-m",
+        "mcp_atlassian.server"
+      ],
+      "env": {
+        "CONFLUENCE_URL": "https://YOUR-CREDENTIALS@YOUR-DOMAIN//levelup2x.atlassian.net",
+        "JIRA_USERNAME": "chase@levelup2x.com",
+        "JIRA_API_TOKEN": "YOUR-ATLASSIAN-API-TOKEN-HERE"
+      },
+      "transportType": "stdio",
+      "alwaysAllow": [
+        "jira_get_issue_transitions",
+        "jira_attach_file_to_issue",
+        "jira_update_epic_progress",
+        "jira_get_issue_attachments",
+        "jira_get_epic_issues",
+        "jira_create_epic",
+        "jira_add_comment",
+        "jira_transition_issue",
+        "jira_update_issue",
+        "jira_create_issue_link",
+        "jira_get_issue_link_types",
+        "jira_create_issue",
+        "jira_create_project",
+        "jira_get_project_issues",
+        "jira_search",
+        "jira_get_issue",
+        "confluence_get_page_tree",
+        "confluence_move_page",
+        "confluence_update_page",
+        "confluence_restore_page_version",
+        "confluence_get_page_history",
+        "confluence_attach_file",
+        "confluence_create_page_from_file",
+        "confluence_create_page",
+        "confluence_get_comments",
+        "confluence_get_page",
+        "confluence_search"
+      ]
+    },
+    "llm-server": {
+      "autoApprove": [
+        "chat",
+        "list_models",
+        "get_model_info",
+        "toggle_logging",
+        "web_search"
+      ],
+      "disabled": false,
+      "timeout": 60,
+      "command": "node",
+      "args": [
+        "/data-nova/ax/DevOps/mcp_master/mcp-dev/llm-server/build/index.js"
+      ],
+      "env": {
+        "DEBUG": "true",
+        "MCP_SERVER_NAME": "llm-server",
+        "MCP_SERVER_VERSION": "0.1.0",
+        "OPENAI_API_KEY": "sk-proj-YOUR-OPENAI-KEY-HERE",
+        "ANTHROPIC_API_KEY": "sk-ant-api03-YOUR-ANTHROPIC-KEY-HERE",
+        "CHAT_LOG_DIR": "/data-nova/ax/DevOps/mcp_master/mcp-dev/llm-server/chats"
+      },
+      "transportType": "stdio",
+      "alwaysAllow": [
+        "web_search",
+        "list_models",
+        "toggle_logging",
+        "chat"
+      ]
+    },
+    "Ollama": {
+      "autoApprove": [
+        "serve",
+        "create",
+        "show",
+        "run",
+        "pull",
+        "push",
+        "list",
+        "cp",
+        "rm",
+        "chat_completion"
+      ],
+      "disabled": false,
+      "timeout": 60,
+      "command": "node",
+      "args": [
+        "/home/x/Documents/Cline/MCP/ollama-mcp/build/index.js"
+      ],
+      "env": {
+        "OLLAMA_HOST": "http://127.0.0.1:11434",
+        "HOME": "/home/x"
+      },
+      "transportType": "stdio"
+    },
+    "redpanda": {
+      "autoApprove": [
+        "create_topic",
+        "delete_topic",
+        "list_topics",
+        "describe_topic",
+        "produce_message",
+        "consume_messages",
+        "list_consumer_groups",
+        "describe_consumer_group",
+        "delete_consumer_group",
+        "describe_cluster",
+        "get_cluster_health"
+      ],
+      "disabled": false,
+      "timeout": 60,
+      "command": "node",
+      "args": [
+        "/home/x/Documents/Cline/MCP/redpanda-server/build/index.js"
+      ],
+      "env": {
+        "REDPANDA_AUTH_DISABLED": "false",
+        "REDPANDA_USERNAME": "keystone",
+        "REDPANDA_PASSWORD": "keystone-password-9e8d7c6b5a4f3e2d1c0b9a8f7e6d5c4b",
+        "REDPANDA_BROKERS": "[{\"host\":\"127.0.0.1\",\"port\":19092}]"
+      },
+      "transportType": "stdio",
+      "alwaysAllow": [
+        "create_topic",
+        "delete_topic",
+        "list_topics",
+        "describe_topic",
+        "produce_message",
+        "consume_messages",
+        "list_consumer_groups",
+        "describe_consumer_group",
+        "delete_consumer_group",
+        "describe_cluster",
+        "get_cluster_health"
+      ]
+    },
+    "dragonflydb": {
+      "autoApprove": [
+        "set",
+        "get",
+        "delete",
+        "list",
+        "stream_publish",
+        "stream_read",
+        "list_streams",
+        "vector_create_index",
+        "vector_add",
+        "vector_search",
+        "vector_delete",
+        "vector_list_indexes",
+        "vector_get_index_info"
+      ],
+      "disabled": false,
+      "timeout": 60,
+      "command": "node",
+      "args": [
+        "/home/x/Documents/Cline/MCP/dragonfly-server/build/index.js"
+      ],
+      "env": {
+        "DRAGONFLY_AUTH_DISABLED": "false",
+        "DRAGONFLY_PASSWORD": "dragonfly-password-f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2",
+        "DRAGONFLY_VECTOR_PASSWORD": "",
+        "DRAGONFLY_VECTOR_HOST": "10.240.1.11",
+        "DRAGONFLY_VECTOR_PORT": "6333",
+        "DRAGONFLY_VECTOR_ENABLED": "true",
+        "DRAGONFLY_VECTOR_MEMORY_LIMIT": "4GB",
+        "DRAGONFLY_VECTOR_TYPE": "qdrant"
+      },
+      "transportType": "stdio",
+      "alwaysAllow": [
+        "set",
+        "get",
+        "delete",
+        "list",
+        "stream_publish",
+        "stream_read",
+        "list_streams",
+        "vector_create_index",
+        "vector_add",
+        "vector_search",
+        "vector_delete",
+        "vector_list_indexes",
+        "vector_get_index_info"
+      ]
+    },
+    "NATS": {
+      "autoApprove": [
+        "create_stream",
+        "delete_stream",
+        "get_stream_info",
+        "list_streams",
+        "create_consumer",
+        "delete_consumer",
+        "get_consumer_info",
+        "list_consumers",
+        "publish_message",
+        "publish_jetstream_message",
+        "consume_messages",
+        "subscribe_subject",
+        "get_server_info",
+        "get_jetstream_account_info"
+      ],
+      "disabled": false,
+      "timeout": 60,
+      "command": "node",
+      "args": [
+        "/data-nova/ax/InfraOps/CommsOps/nats-mcp-server/build/index.js"
+      ],
+      "env": {
+        "NATS_SERVER": "nats://127.0.0.1:12310",
+        "NATS_USER": "nats_user",
+        "NATS_PASSWORD": "nats-password-f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2",
+        "DEBUG": "true"
+      },
+      "transportType": "stdio",
+      "alwaysAllow": [
+        "create_stream",
+        "delete_stream",
+        "get_stream_info",
+        "list_streams",
+        "create_consumer",
+        "delete_consumer",
+        "get_consumer_info",
+        "list_consumers",
+        "publish_message",
+        "publish_jetstream_message",
+        "consume_messages",
+        "subscribe_subject",
+        "get_server_info",
+        "get_jetstream_account_info"
+      ]
+    },
+    "pulsar": {
+      "autoApprove": [
+        "create_topic",
+        "list_topics",
+        "send_message",
+        "get_messages",
+        "get_stats",
+        "delete_topic",
+        "create_subscription",
+        "list_subscriptions",
+        "delete_subscription",
+        "create_consumer_group",
+        "list_consumer_groups",
+        "delete_consumer_group",
+        "read_with_subscription_type",
+        "create_schema",
+        "get_schema",
+        "delete_schema",
+        "create_partitioned_topic",
+        "update_partitioned_topic",
+        "get_partitioned_topic_metadata",
+        "create_multi_topic_subscription",
+        "read_from_multi_topic",
+        "set_retention_policy",
+        "get_retention_policy",
+        "enable_compaction",
+        "trigger_compaction",
+        "compaction_status"
+      ],
+      "disabled": false,
+      "timeout": 60,
+      "command": "node",
+      "args": [
+        "/data-nova/ax/DevOps/mcp_master/pulsar-mcp/build/index.js"
+      ],
+      "env": {
+        "PULSAR_HOST": "localhost",
+        "PULSAR_PORT": "6650",
+        "PULSAR_ADMIN_PORT": "8083",
+        "MCP_SERVER_NAME": "pulsar-mcp",
+        "MCP_SERVER_VERSION": "1.0.0"
+      },
+      "transportType": "stdio",
+      "alwaysAllow": [
+        "create_topic",
+        "list_topics",
+        "send_message",
+        "get_messages",
+        "get_stats",
+        "delete_topic",
+        "create_subscription",
+        "list_subscriptions",
+        "delete_subscription",
+        "create_consumer_group",
+        "list_consumer_groups",
+        "delete_consumer_group",
+        "read_with_subscription_type",
+        "create_schema",
+        "get_schema",
+        "delete_schema",
+        "create_partitioned_topic",
+        "update_partitioned_topic",
+        "get_partitioned_topic_metadata",
+        "create_multi_topic_subscription",
+        "read_from_multi_topic",
+        "set_retention_policy",
+        "get_retention_policy",
+        "enable_compaction",
+        "trigger_compaction",
+        "compaction_status"
+      ]
+    },
+    "context7": {
+      "autoApprove": [],
+      "disabled": false,
+      "timeout": 60,
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ],
+      "cwd": "/data-nova/ax/DevOps/mcp/mcp-servers/tools/upstash-context7-mcp",
+      "transportType": "stdio"
+    },
+    "mem0": {
+      "command": "node",
+      "args": [
+        "/home/x/.local/share/Roo-Code/MCP/mem0-mcp/build/index.js"
+      ],
+      "env": {
+        "MEM0_API_KEY": "YOUR_MEM0_API_KEY_HERE",
+        "ANTHROPIC_API_KEY": "sk-ant-api03-YOUR-ANTHROPIC-KEY-HERE"
+      },
+      "disabled": false,
+      "alwaysAllow": [
+        "add_memory",
+        "add_conversation",
+        "search_memories",
+        "generate_with_claude"
+      ],
+      "autoApprove": [
+        "add_memory",
+        "add_conversation",
+        "search_memories",
+        "generate_with_claude"
+      ]
+    },
+    "FireCrawl": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-94ebc24ae6a4492f9022d6a83001fc54"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "firecrawl_scrape",
+        "firecrawl_map",
+        "firecrawl_crawl",
+        "firecrawl_check_crawl_status",
+        "firecrawl_search",
+        "firecrawl_extract",
+        "firecrawl_deep_research",
+        "firecrawl_generate_llmstxt",
+        "firecrawl_batch_scrape",
+        "list_tools"
+      ],
+      "alwaysAllow": [
+        "firecrawl_scrape",
+        "firecrawl_map",
+        "firecrawl_crawl",
+        "firecrawl_check_crawl_status",
+        "firecrawl_search",
+        "firecrawl_extract",
+        "firecrawl_deep_research",
+        "firecrawl_generate_llmstxt"
+      ]
+    }
+  }
+}

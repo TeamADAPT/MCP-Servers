@@ -1,0 +1,20 @@
+[Unit]
+Description=Red Stream MCP Server
+After=network.target redis.service
+
+[Service]
+Type=simple
+User=x
+Environment=NODE_ENV=production
+Environment=DEBUG=true
+Environment=REDIS_HOST=127.0.0.1
+Environment=REDIS_PORT=6379
+WorkingDirectory=/data/ax/DevOps/projects/mcp_servers/red-stream
+ExecStart=/usr/bin/node build/index.js
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "enabled": true,
+  "settings": {
+    "autoProgressThreshold": 100,
+    "checkpointFrequency": "phase",
+    "progressReportInterval": 3600,
+    "errorRetryCount": 3,
+    "errorRetryBackoffFactor": 1.5,
+    "maxErrorRetryDelay": 2000,
+    "continueOnNonCriticalError": true,
+    "logLevel": "detailed"
+  },
+  "logging": {
+    "executionLogPath": "/logs/MemCommsOps/execution_logs/",
+    "progressReportPath": "/logs/MemCommsOps/progress_reports/",
+    "errorLogPath": "/logs/MemCommsOps/error_logs/",
+    "decisionLogPath": "/logs/MemCommsOps/decision_logs/"
+  },
+  "notifications": {
+    "criticalBlockerOnly": true,
+    "phaseCompletionSummary": true,
+    "finalCompletionReport": true,
+    "errorThreshold": "critical"
+  },
+  "security": {
+    "credentialRotationEnabled": true,
+    "credentialMaxLifetime": 86400,
+    "sensitiveOperationLogging": false,
+    "privilegedOperationApproval": true
+  },
+  "recovery": {
+    "stateTrackingEnabled": true,
+    "autoResumeEnabled": true,
+    "checkpointingEnabled": true,
+    "stateStoragePath": "/logs/MemCommsOps/state/"
+  },
+  "decisionMaking": {
+    "autonomyLevel": "high",
+    "fallbackStrategiesEnabled": true,
+    "standardsEnforcementLevel": "strict",
+    "documentationRequired": true
+  },
+  "phaseTransition": {
+    "autoProgressEnabled": true,
+    "confirmationRequired": false,
+    "summaryRequired": true,
+    "statusCheckRequired": true
+  },
+  "github": {
+    "defaultBranch": "main",
+    "defaultVisibility": "private",
+    "useGitHubCLI": true,
+    "requireAuthentication": false,
+    "branchProtectionEnabled": true,
+    "requireReviews": true,
+    "requireStatusChecks": true,
+    "enforceStandards": true
+  }
+}

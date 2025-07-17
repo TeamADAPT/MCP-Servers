@@ -1,0 +1,4 @@
+Board Section,Allowed Statuses
+To Do,"Open, Backlog, Waiting for Triage"
+In Progress,"In Progress, In Review, Testing"
+Done,"Done, Completed, Closed"

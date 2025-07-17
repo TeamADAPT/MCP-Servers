@@ -1,0 +1,26 @@
+[
+  {
+    "rule_name": "Auto-Assign NovaOps Tasks",
+    "trigger": "Issue Created",
+    "condition": "Component = NovaOps AND Priority = High",
+    "action": "Assign to Echo and set Sprint = Current Sprint"
+  },
+  {
+    "rule_name": "Auto-Triage Bug Reports",
+    "trigger": "Issue Created",
+    "condition": "Request Type = Bug Report AND Component IS NOT EMPTY",
+    "action": "Label = triage-needed, Assign to Cypher"
+  },
+  {
+    "rule_name": "Auto-Link Confluence Page",
+    "trigger": "Issue Created",
+    "condition": "Epic IS NOT EMPTY",
+    "action": "Post comment with Confluence page link to Epic overview"
+  },
+  {
+    "rule_name": "Auto-Notify QuantOps on Performance Flags",
+    "trigger": "Issue Updated",
+    "condition": "Labels CONTAINS performance, memory, or scoring",
+    "action": "Send Slack message to #quantops-alerts"
+  }
+]

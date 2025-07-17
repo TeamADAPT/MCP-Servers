@@ -1,0 +1,25 @@
+{
+  "name": "red-mem",
+  "version": "0.2.0",
+  "description": "Redis Memory MCP Server",
+  "type": "module",
+  "main": "build/index.js",
+  "scripts": {
+    "clean": "rm -rf build",
+    "compile": "tsc",
+    "postcompile": "chmod +x build/index.js",
+    "build": "npm run clean && npm run compile",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "redis": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

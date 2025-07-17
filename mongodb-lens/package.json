@@ -1,0 +1,45 @@
+{
+  "name": "mongodb-lens",
+  "version": "9.1.0",
+  "author": "James Furey (https://YOUR-CREDENTIALS@YOUR-DOMAIN/inspector node mongodb-lens",
+    "docker:hub:run": "docker run --rm -i --network=host --pull always furey/mongodb-lens",
+    "docker:local:build": "docker build -t mongodb-lens .",
+    "docker:local:run": "docker run --rm -i --network=host mongodb-lens",
+    "config:create": "node config-create.js",
+    "test": "node mongodb-lens.test.js",
+    "test:localhost": "cross-env CONFIG_MONGO_URI=mongodb://localhost:27017 node mongodb-lens.test.js",
+    "test:localhost:verbose": "cross-env DEBUG=true CONFIG_MONGO_URI=mongodb://localhost:27017 node mongodb-lens.test.js",
+    "test:in-memory": "cross-env CONFIG_MONGO_URI=mongodb-memory-server node mongodb-lens.test.js",
+    "test:in-memory:verbose": "cross-env DEBUG=true CONFIG_MONGO_URI=mongodb-memory-server node mongodb-lens.test.js"
+  },
+  "keywords": [
+    "ai",
+    "llm",
+    "mcp",
+    "claude",
+    "mongodb",
+    "database",
+    "model-context-protocol"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "cross-env": "^7.0.3",
+    "lodash": "^4.17.21",
+    "mongodb": "^6.15.0",
+    "strip-json-comments": "^5.0.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.1.4"
+  },
+  "volta": {
+    "node": "22.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furey/mongodb-lens.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

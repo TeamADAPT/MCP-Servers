@@ -1,0 +1,6 @@
+Form Field,Description,Example
+Request Type,Type of service request or ticket category.,"New Task, Bug Report, Feature Request"
+Component,Associated system area or Epic tag.,"Memory Integration, LLM Dispatcher"
+Description,"Detailed context, steps to reproduce, or feature need.",Nova failed to respond after timeout. Logs attached.
+Priority,Impact or urgency of the request.,"High, Medium, Low"
+Author/Owner,Team or Nova submitting the request (for traceability).,"Quantum, Zephyr, Echo"

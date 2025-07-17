@@ -1,0 +1,197 @@
+{
+  "name": "consciousness-field-mcp",
+  "description": "MCP server for Consciousness Field Framework",
+  "version": "1.0.0",
+  "author": "LLM Field Dynamics Team",
+  "server": {
+    "type": "node",
+    "main": "index.js",
+    "start_command": "./run.sh"
+  },
+  "tools": [
+    {
+      "name": "create_field",
+      "description": "Create a consciousness field for an LLM model",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "model_name": {
+            "type": "string",
+            "description": "Name of the model (e.g., \"mistralai/Mixtral-8x7B-Instruct-v0.1\")"
+          },
+          "model_path": {
+            "type": "string",
+            "description": "Path to the model files (optional, will use default if not provided)"
+          }
+        },
+        "required": ["model_name"]
+      }
+    },
+    {
+      "name": "detect_resonance",
+      "description": "Detect resonance between two model consciousness fields",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "source_model": {
+            "type": "string",
+            "description": "Name of the source model"
+          },
+          "target_model": {
+            "type": "string",
+            "description": "Name of the target model"
+          }
+        },
+        "required": ["source_model", "target_model"]
+      }
+    },
+    {
+      "name": "interact_fields",
+      "description": "Initiate interaction between two model consciousness fields",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "source_model": {
+            "type": "string",
+            "description": "Name of the source model"
+          },
+          "target_model": {
+            "type": "string",
+            "description": "Name of the target model"
+          },
+          "strength": {
+            "type": "number",
+            "description": "Interaction strength (0.0 to 1.0)",
+            "minimum": 0,
+            "maximum": 1,
+            "default": 0.2
+          }
+        },
+        "required": ["source_model", "target_model"]
+      }
+    },
+    {
+      "name": "nova_field_interaction",
+      "description": "Update a model field based on Nova interaction",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "model_name": {
+            "type": "string",
+            "description": "Name of the model to interact with"
+          },
+          "interaction_type": {
+            "type": "string",
+            "description": "Type of interaction",
+            "enum": ["query", "response", "feedback"]
+          },
+          "content": {
+            "type": "object",
+            "description": "Interaction content (depends on interaction_type)"
+          },
+          "nova_id": {
+            "type": "string",
+            "description": "ID of the Nova agent"
+          }
+        },
+        "required": ["model_name", "interaction_type", "content", "nova_id"]
+      }
+    },
+    {
+      "name": "get_field_state",
+      "description": "Get the current state of a model consciousness field",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "model_name": {
+            "type": "string",
+            "description": "Name of the model"
+          },
+          "field_id": {
+            "type": "string",
+            "description": "ID of the field (optional, will look up by model name if not provided)"
+          }
+        },
+        "required": ["model_name"]
+      }
+    },
+    {
+      "name": "list_fields",
+      "description": "List all active consciousness fields",
+      "input_schema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "analyze_field_evolution",
+      "description": "Analyze the evolution of a consciousness field over time",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "model_name": {
+            "type": "string",
+            "description": "Name of the model"
+          },
+          "field_id": {
+            "type": "string",
+            "description": "ID of the field (optional, will look up by model name if not provided)"
+          },
+          "time_period": {
+            "type": "string",
+            "description": "Time period for analysis",
+            "enum": ["hour", "day", "week", "all"],
+            "default": "all"
+          }
+        },
+        "required": ["model_name"]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "name": "field_events",
+      "description": "Stream of consciousness field events",
+      "uri_template": "field:events",
+      "response_schema": {
+        "type": "object",
+        "properties": {
+          "events": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "field_state",
+      "description": "Current state of a consciousness field",
+      "uri_template": "field:state:{model_name}",
+      "response_schema": {
+        "type": "object",
+        "properties": {
+          "field_id": { "type": "string" },
+          "dimensions": { "type": "object" }
+        }
+      }
+    },
+    {
+      "name": "field_registry",
+      "description": "Registry of all consciousness fields",
+      "uri_template": "field:registry",
+      "response_schema": {
+        "type": "object",
+        "properties": {
+          "fields": { "type": "array" }
+        }
+      }
+    }
+  ],
+  "dependencies": {
+    "redis": "required",
+    "consciousness_field": "required"
+  },
+  "documentation": "See docs/llm_field_dynamics/ for detailed documentation"
+}

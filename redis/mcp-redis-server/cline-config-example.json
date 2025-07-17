@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "redis": {
+      "command": "node",
+      "args": ["/path/to/mcp-redis-server/src/index.js", "redis://username:password@hostname:port"],
+      "env": {
+        "REDIS_NAMESPACE_PREFIX": "cline:",
+        "NODE_NO_WARNINGS": "1"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "set",
+        "get",
+        "delete",
+        "list",
+        "stream_publish"
+      ]
+    }
+  }
+}

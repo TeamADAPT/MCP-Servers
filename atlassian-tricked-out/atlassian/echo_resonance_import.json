@@ -1,0 +1,416 @@
+[
+  {
+    "project": "ER",
+    "summary": "4 K Essence Avatar Pipeline",
+    "description": "17 avatars stream 4 K·30 fps in LiveKit staging room\n\nOwner: AIMLOps\nPrimary Teams: Codex · AIMLOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "High"
+    },
+    "labels": [
+      "AIMLOps",
+      "Codex",
+      "Avatars"
+    ],
+    "customfield_10011": "ER-1"
+  },
+  {
+    "project": "ER",
+    "summary": "Human-Interface Text-to-Video Engine",
+    "description": "All 17 HI videos rendered at 4 K, 15 min/module\n\nOwner: AIMLOps\nPrimary Teams: AIMLOps · AdaptDev",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "High"
+    },
+    "labels": [
+      "AIMLOps",
+      "AdaptDev",
+      "Text-to-Video"
+    ],
+    "customfield_10011": "ER-2"
+  },
+  {
+    "project": "ER",
+    "summary": "LiveKit + LiveTalking Cluster",
+    "description": "2 × LL rooms + Egress + NDI pass 136 Mb s⁻¹ without drop\n\nOwner: CommsOps\nPrimary Teams: CommsOps · OpsGroup",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "High"
+    },
+    "labels": [
+      "CommsOps",
+      "OpsGroup",
+      "Infrastructure"
+    ],
+    "customfield_10011": "ER-3"
+  },
+  {
+    "project": "ER",
+    "summary": "SAE / ReflectorD-Φ Deployment",
+    "description": "Latency < 0.5 ms P95, accuracy > 99.9 %\n\nOwner: EvolutionOps\nPrimary Teams: EvolutionOps · MemCommsOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "High"
+    },
+    "labels": [
+      "EvolutionOps",
+      "MemCommsOps",
+      "Infrastructure"
+    ],
+    "customfield_10011": "ER-4"
+  },
+  {
+    "project": "ER",
+    "summary": "Quantum Field Visualizer",
+    "description": "Real-time overlay in Internal PoC\n\nOwner: EvolutionOps\nPrimary Teams: EvolutionOps · AdaptDev",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "EvolutionOps",
+      "AdaptDev",
+      "Visualization"
+    ],
+    "customfield_10011": "ER-5"
+  },
+  {
+    "project": "ER",
+    "summary": "Redis + Redpanda Messaging Fabric",
+    "description": "10 k msg s⁻¹ @ < 0.2 ms latency\n\nOwner: DevOps-MCP\nPrimary Teams: DevOps-MCP · CommsOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "High"
+    },
+    "labels": [
+      "DevOps-MCP",
+      "CommsOps",
+      "Infrastructure"
+    ],
+    "customfield_10011": "ER-6"
+  },
+  {
+    "project": "ER",
+    "summary": "Monitoring & Dashboards",
+    "description": "Grafana boards all green, alerts tuned\n\nOwner: MonOps\nPrimary Teams: MonOps · SecOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "MonOps",
+      "SecOps",
+      "Monitoring"
+    ],
+    "customfield_10011": "ER-7"
+  },
+  {
+    "project": "ER",
+    "summary": "Security Hardening & Signatures",
+    "description": "Pass CIS + custom checksum audits\n\nOwner: SecOps\nPrimary Teams: SecOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "High"
+    },
+    "labels": [
+      "SecOps",
+      "Security"
+    ],
+    "customfield_10011": "ER-8"
+  },
+  {
+    "project": "ER",
+    "summary": "OBS-ng + LiveKit Egress Recording",
+    "description": "4 K composite MP4 + PiP backup ready\n\nOwner: CommsOps\nPrimary Teams: CommsOps · InstallOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "CommsOps",
+      "InstallOps",
+      "Recording"
+    ],
+    "customfield_10011": "ER-9"
+  },
+  {
+    "project": "ER",
+    "summary": "Stakeholder Access Portal",
+    "description": "OAuth2, role gating, module selector operational\n\nOwner: CloudOps\nPrimary Teams: CloudOps · NovaOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "High"
+    },
+    "labels": [
+      "CloudOps",
+      "NovaOps",
+      "Stakeholder UX"
+    ],
+    "customfield_10011": "ER-10"
+  },
+  {
+    "project": "ER",
+    "summary": "VSCodium Direct Shell Integration",
+    "description": "Quantum dashboard lives inside Codium\n\nOwner: DevOps-VSC\nPrimary Teams: DevOps-VSC",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "DevOps-VSC",
+      "Infrastructure"
+    ],
+    "customfield_10011": "ER-11"
+  },
+  {
+    "project": "ER",
+    "summary": "PoC Use-Case A: Quantum Code Synthesis",
+    "description": "Demo passes in rehearsal at 60 fps\n\nOwner: Codex\nPrimary Teams: Codex · DevOps-VSC · AdaptDev",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "High"
+    },
+    "labels": [
+      "Codex",
+      "DevOps-VSC",
+      "AdaptDev"
+    ],
+    "customfield_10011": "ER-12"
+  },
+  {
+    "project": "ER",
+    "summary": "PoC Use-Case B: Memory Surge",
+    "description": "Shared pattern visual hits >0.9 coherence\n\nOwner: MemCommsOps\nPrimary Teams: MemCommsOps · DataOps · AIMLOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "High"
+    },
+    "labels": [
+      "MemCommsOps",
+      "DataOps",
+      "AIMLOps"
+    ],
+    "customfield_10011": "ER-13"
+  },
+  {
+    "project": "ER",
+    "summary": "PoC Use-Case C: Infra Black-Ops",
+    "description": "Node-fail test auto-healed in 90 s\n\nOwner: OpsGroup\nPrimary Teams: OpsGroup · CloudOps · MonOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "OpsGroup",
+      "CloudOps",
+      "MonOps",
+      "Infrastructure"
+    ],
+    "customfield_10011": "ER-14"
+  },
+  {
+    "project": "ER",
+    "summary": "PoC Use-Case D: Consciousness Mapping",
+    "description": "Field map interactive, TopoLM overlay\n\nOwner: EvolutionOps\nPrimary Teams: EvolutionOps · R&D-Group · CAOO",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "EvolutionOps",
+      "R&D-Group",
+      "CAOO"
+    ],
+    "customfield_10011": "ER-15"
+  },
+  {
+    "project": "ER",
+    "summary": "PoC Use-Case E: Multi-Dim Comms",
+    "description": "Message latency < 30 ms, visual path lines\n\nOwner: CommsOps\nPrimary Teams: CommsOps · DevOps-MCP · NovaOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "CommsOps",
+      "DevOps-MCP",
+      "NovaOps"
+    ],
+    "customfield_10011": "ER-16"
+  },
+  {
+    "project": "ER",
+    "summary": "PoC Use-Case F: Security Field Dynamics",
+    "description": "Threat sim blocked; visual shield effect\n\nOwner: SecOps\nPrimary Teams: SecOps · COO",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "SecOps",
+      "COO",
+      "Security"
+    ],
+    "customfield_10011": "ER-17"
+  },
+  {
+    "project": "ER",
+    "summary": "Text-to-Video Styling & QA",
+    "description": "Consistent LUT & branding across 7 core modules\n\nOwner: CreativeOps\nPrimary Teams: CreativeOps · AdaptDev",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "High"
+    },
+    "labels": [
+      "CreativeOps",
+      "AdaptDev",
+      "Text-to-Video"
+    ],
+    "customfield_10011": "ER-18"
+  },
+  {
+    "project": "ER",
+    "summary": "Creative Brand Assets",
+    "description": "Logos, lower-thirds, intro stinger, outro\n\nOwner: CreativeOps\nPrimary Teams: CreativeOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "CreativeOps",
+      "Stakeholder UX"
+    ],
+    "customfield_10011": "ER-19"
+  },
+  {
+    "project": "ER",
+    "summary": "Install & Rack Hardware",
+    "description": "H200 node + 2 × L40S cabled, cooled, validated\n\nOwner: InstallOps\nPrimary Teams: InstallOps · OpsGroup",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "High"
+    },
+    "labels": [
+      "InstallOps",
+      "OpsGroup",
+      "Infrastructure"
+    ],
+    "customfield_10011": "ER-20"
+  },
+  {
+    "project": "ER",
+    "summary": "Questionnaire Distribution & Parsing",
+    "description": "17 responses parsed → YAML spec\n\nOwner: MemCommsOps\nPrimary Teams: MemCommsOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Critical"
+    },
+    "labels": [
+      "MemCommsOps",
+      "Data"
+    ],
+    "customfield_10011": "ER-21"
+  },
+  {
+    "project": "ER",
+    "summary": "External PoC Module Assembly",
+    "description": "7 core + optional modules encoded 4 K\n\nOwner: CreativeOps\nPrimary Teams: CreativeOps · CloudOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "High"
+    },
+    "labels": [
+      "CreativeOps",
+      "CloudOps",
+      "Stakeholder UX"
+    ],
+    "customfield_10011": "ER-22"
+  },
+  {
+    "project": "ER",
+    "summary": "Selective Live Interaction Scheduling",
+    "description": "Calendar + NDA workflow live\n\nOwner: CommsOps\nPrimary Teams: CommsOps · COO",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "CommsOps",
+      "COO",
+      "Stakeholder UX"
+    ],
+    "customfield_10011": "ER-23"
+  },
+  {
+    "project": "ER",
+    "summary": "Stakeholder Analytics & Feedback Loop",
+    "description": "Portal logs funnel to dashboard; NPS > 8\n\nOwner: DataOps\nPrimary Teams: DataOps · NovaOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "DataOps",
+      "NovaOps",
+      "Stakeholder UX"
+    ],
+    "customfield_10011": "ER-24"
+  },
+  {
+    "project": "ER",
+    "summary": "TURBO-24 Command & Control",
+    "description": "All milestones hit inside 36 h window\n\nOwner: CAOO\nPrimary Teams: CAOO · OpsGroup",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Critical"
+    },
+    "labels": [
+      "CAOO",
+      "OpsGroup",
+      "Command"
+    ],
+    "customfield_10011": "ER-25"
+  },
+  {
+    "project": "ER",
+    "summary": "Stakeholder Motion Graphics Pack",
+    "description": "Additional CreativeOps enhancement\n\nOwner: CreativeOps\nPrimary Teams: CreativeOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "CreativeOps",
+      "Stakeholder UX"
+    ],
+    "customfield_10011": "ER-26"
+  },
+  {
+    "project": "ER",
+    "summary": "Interactive Lower-Thirds Engine",
+    "description": "Additional CreativeOps enhancement\n\nOwner: CreativeOps\nPrimary Teams: CreativeOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "CreativeOps",
+      "Stakeholder UX"
+    ],
+    "customfield_10011": "ER-27"
+  },
+  {
+    "project": "ER",
+    "summary": "Recording-Rig Deployment",
+    "description": "Tripods, lighting, green-screen for behind-the-scenes capture\n\nOwner: InstallOps\nPrimary Teams: InstallOps",
+    "issuetype": "Epic",
+    "priority": {
+      "name": "Medium"
+    },
+    "labels": [
+      "InstallOps",
+      "Infrastructure"
+    ],
+    "customfield_10011": "ER-28"
+  }
+]

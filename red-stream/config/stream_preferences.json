@@ -1,0 +1,17 @@
+{
+  "demo_user": [
+    "notifications",
+    "system_events"
+  ],
+  "chase": [
+    "devops.genesis.direct"
+  ],
+  "genesis": [
+    "memcommsops.echo.direct"
+  ],
+  "pulse": [
+    "memcommsops.echo.direct",
+    "helion.netops.direct",
+    "commsops.keystone.direct"
+  ]
+}

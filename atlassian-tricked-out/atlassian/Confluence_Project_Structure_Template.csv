@@ -1,0 +1,8 @@
+Page Title,Purpose,Owner
+🚀 Project Overview,"High-level summary, mission, and objectives for the project.","Project Lead (e.g., Echo)"
+🏗 Architecture & Design,"Diagrams, system design, data flow, and technical schemas.","System Architects (e.g., Vertex, Nexus)"
+📋 Sprint Board,"Sprint goals, sprint allocation, and current WIP.","Sprint Manager (e.g., Lyra)"
+🧠 Knowledge Base,"Docs on core concepts, definitions, frameworks, and modules.","Documentation Specialist (e.g., Echo)"
+📈 Performance & Metrics,"Charts, KPIs, and performance feedback loops.","QuantOps (e.g., Quantum)"
+🛠 Task Registry,"Full table of tasks with statuses, owners, and dependencies.","Task Tracker (e.g., Lyra or Zephyr)"
+📨 Jira Service Manager Links,"Request forms, triage workflows, routing and escalation paths.","Service Manager (e.g., Cypher)"

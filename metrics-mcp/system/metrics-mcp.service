@@ -1,0 +1,25 @@
+[Unit]
+Description=Metrics MCP Server
+After=network.target redis.service
+Requires=redis.service
+
+[Service]
+Type=simple
+User=x
+Group=x
+Environment=DEBUG=true
+Environment=NODE_ENV=production
+Environment=REDIS_HOST=127.0.0.1
+Environment=REDIS_PORT=6379
+Environment=MCP_SERVER_NAME=metrics-mcp
+Environment=MCP_SERVER_VERSION=0.1.0
+Environment=AUTO_INITIALIZE=true
+WorkingDirectory=/data/ax/DevOps/mcp_master/metrics-mcp
+ExecStart=/usr/bin/node build/index.js
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

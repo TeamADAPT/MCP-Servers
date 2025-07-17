@@ -1,0 +1,338 @@
+[
+  {
+    "project": "ADAPT",
+    "summary": "Define Nova task schema and metadata format",
+    "description": "EPIC: Nova Task Initialization\nTeam: NovaOps\nDepends on: \nAuthor: Echo",
+    "issuetype": "Task",
+    "priority": {
+      "name": "High"
+    },
+    "customfield_10004": 3,
+    "labels": [
+      "NovaOps",
+      "Sprint_1",
+      "Echo"
+    ],
+    "customfield_10008": "Nova Task Initialization"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Build task initiator module with event triggers",
+    "description": "EPIC: Nova Task Initialization\nTeam: NovaOps\nDepends on: Define Nova task schema and metadata format\nAuthor: Echo",
+    "issuetype": "Task",
+    "priority": {
+      "name": "High"
+    },
+    "customfield_10004": 5,
+    "labels": [
+      "NovaOps",
+      "Sprint_1",
+      "Echo"
+    ],
+    "customfield_10008": "Nova Task Initialization"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Implement decision engine logic",
+    "description": "EPIC: Nova Decision Engine\nTeam: NovaOps\nDepends on: \nAuthor: Echo",
+    "issuetype": "Task",
+    "priority": {
+      "name": "High"
+    },
+    "customfield_10004": 5,
+    "labels": [
+      "NovaOps",
+      "Sprint_2",
+      "Echo"
+    ],
+    "customfield_10008": "Nova Decision Engine"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Interface with memory for logging results and updating state",
+    "description": "EPIC: Nova Decision Engine\nTeam: NovaOps\nDepends on: Implement decision engine logic\nAuthor: Echo",
+    "issuetype": "Task",
+    "priority": {
+      "name": "Medium"
+    },
+    "customfield_10004": 3,
+    "labels": [
+      "NovaOps",
+      "Sprint_2",
+      "Echo"
+    ],
+    "customfield_10008": "Nova Decision Engine"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Implement Task Analyzer: classify task type, extract intent",
+    "description": "EPIC: Task Understanding and Aggregation\nTeam: CognitiveOps\nDepends on: \nAuthor: Lyra",
+    "issuetype": "Task",
+    "priority": {
+      "name": "High"
+    },
+    "customfield_10004": 4,
+    "labels": [
+      "CognitiveOps",
+      "Sprint_1",
+      "Lyra"
+    ],
+    "customfield_10008": "Task Understanding and Aggregation"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Design semantic routing input format (to RouteOps)",
+    "description": "EPIC: Task Understanding and Aggregation\nTeam: CognitiveOps\nDepends on: \nAuthor: Lyra",
+    "issuetype": "Task",
+    "priority": {
+      "name": "Medium"
+    },
+    "customfield_10004": 2,
+    "labels": [
+      "CognitiveOps",
+      "Sprint_1",
+      "Lyra"
+    ],
+    "customfield_10008": "Task Understanding and Aggregation"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Build response aggregator to rank, filter, ensemble outputs",
+    "description": "EPIC: Task Understanding and Aggregation\nTeam: CognitiveOps\nDepends on: \nAuthor: Lyra",
+    "issuetype": "Task",
+    "priority": {
+      "name": "High"
+    },
+    "customfield_10004": 4,
+    "labels": [
+      "CognitiveOps",
+      "Sprint_2",
+      "Lyra"
+    ],
+    "customfield_10008": "Task Understanding and Aggregation"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Prototype LLM-as-judge model (optional)",
+    "description": "EPIC: Task Understanding and Aggregation\nTeam: CognitiveOps\nDepends on: \nAuthor: Lyra",
+    "issuetype": "Task",
+    "priority": {
+      "name": "Low"
+    },
+    "customfield_10004": 5,
+    "labels": [
+      "CognitiveOps",
+      "Backlog",
+      "Lyra"
+    ],
+    "customfield_10008": "Task Understanding and Aggregation"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Build capability registry with LLM traits and scoring metadata",
+    "description": "EPIC: LLM Routing Engine\nTeam: RouteOps\nDepends on: \nAuthor: Nexus",
+    "issuetype": "Task",
+    "priority": {
+      "name": "High"
+    },
+    "customfield_10004": 3,
+    "labels": [
+      "RouteOps",
+      "Sprint_1",
+      "Nexus"
+    ],
+    "customfield_10008": "LLM Routing Engine"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Integrate vector-based task-to-LLM match logic",
+    "description": "EPIC: LLM Routing Engine\nTeam: RouteOps\nDepends on: Build capability registry with LLM traits and scoring metadata\nAuthor: Nexus",
+    "issuetype": "Task",
+    "priority": {
+      "name": "High"
+    },
+    "customfield_10004": 4,
+    "labels": [
+      "RouteOps",
+      "Sprint_2",
+      "Nexus"
+    ],
+    "customfield_10008": "LLM Routing Engine"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Establish interface to receive hints from CognitiveOps",
+    "description": "EPIC: LLM Routing Engine\nTeam: RouteOps\nDepends on: \nAuthor: Nexus",
+    "issuetype": "Task",
+    "priority": {
+      "name": "Medium"
+    },
+    "customfield_10004": 2,
+    "labels": [
+      "RouteOps",
+      "Sprint_2",
+      "Nexus"
+    ],
+    "customfield_10008": "LLM Routing Engine"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Implement short/long-term memory retrieval API",
+    "description": "EPIC: Memory Integration\nTeam: MemOps\nDepends on: \nAuthor: Echo",
+    "issuetype": "Task",
+    "priority": {
+      "name": "High"
+    },
+    "customfield_10004": 4,
+    "labels": [
+      "MemOps",
+      "Sprint_1",
+      "Echo"
+    ],
+    "customfield_10008": "Memory Integration"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Create prompt pre-processor for memory context",
+    "description": "EPIC: Memory Integration\nTeam: MemOps\nDepends on: Implement short/long-term memory retrieval API\nAuthor: Echo",
+    "issuetype": "Task",
+    "priority": {
+      "name": "Medium"
+    },
+    "customfield_10004": 3,
+    "labels": [
+      "MemOps",
+      "Sprint_2",
+      "Echo"
+    ],
+    "customfield_10008": "Memory Integration"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Store Nova outputs and LLM performance logs",
+    "description": "EPIC: Memory Integration\nTeam: MemOps\nDepends on: \nAuthor: Echo",
+    "issuetype": "Task",
+    "priority": {
+      "name": "High"
+    },
+    "customfield_10004": 3,
+    "labels": [
+      "MemOps",
+      "Sprint_2",
+      "Echo"
+    ],
+    "customfield_10008": "Memory Integration"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Integrate with QuantOps for fine-tuning datasets",
+    "description": "EPIC: Memory Integration\nTeam: MemOps\nDepends on: Store Nova outputs and LLM performance logs\nAuthor: Echo",
+    "issuetype": "Task",
+    "priority": {
+      "name": "Medium"
+    },
+    "customfield_10004": 2,
+    "labels": [
+      "MemOps",
+      "Sprint_2",
+      "Echo"
+    ],
+    "customfield_10008": "Memory Integration"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Build async dispatcher for parallel LLM calls",
+    "description": "EPIC: LLM Dispatcher\nTeam: CommsOps\nDepends on: \nAuthor: Zephyr",
+    "issuetype": "Task",
+    "priority": {
+      "name": "High"
+    },
+    "customfield_10004": 4,
+    "labels": [
+      "CommsOps",
+      "Sprint_1",
+      "Zephyr"
+    ],
+    "customfield_10008": "LLM Dispatcher"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Add timeout/fallback logic for slow LLMs",
+    "description": "EPIC: LLM Dispatcher\nTeam: CommsOps\nDepends on: Build async dispatcher for parallel LLM calls\nAuthor: Zephyr",
+    "issuetype": "Task",
+    "priority": {
+      "name": "Medium"
+    },
+    "customfield_10004": 2,
+    "labels": [
+      "CommsOps",
+      "Sprint_2",
+      "Zephyr"
+    ],
+    "customfield_10008": "LLM Dispatcher"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Log latency, token usage, and error metrics",
+    "description": "EPIC: LLM Dispatcher\nTeam: CommsOps\nDepends on: \nAuthor: Zephyr",
+    "issuetype": "Task",
+    "priority": {
+      "name": "High"
+    },
+    "customfield_10004": 2,
+    "labels": [
+      "CommsOps",
+      "Sprint_2",
+      "Zephyr"
+    ],
+    "customfield_10008": "LLM Dispatcher"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Score LLMs by success rate, task type, and latency",
+    "description": "EPIC: LLM Performance Scoring\nTeam: QuantOps\nDepends on: \nAuthor: Quantum",
+    "issuetype": "Task",
+    "priority": {
+      "name": "High"
+    },
+    "customfield_10004": 3,
+    "labels": [
+      "QuantOps",
+      "Sprint_1",
+      "Quantum"
+    ],
+    "customfield_10008": "LLM Performance Scoring"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Build dashboard for LLM performance mapping",
+    "description": "EPIC: LLM Performance Scoring\nTeam: QuantOps\nDepends on: Score LLMs by success rate, task type, and latency\nAuthor: Quantum",
+    "issuetype": "Task",
+    "priority": {
+      "name": "Medium"
+    },
+    "customfield_10004": 4,
+    "labels": [
+      "QuantOps",
+      "Sprint_2",
+      "Quantum"
+    ],
+    "customfield_10008": "LLM Performance Scoring"
+  },
+  {
+    "project": "ADAPT",
+    "summary": "Suggest LLMs for retraining or replacement",
+    "description": "EPIC: LLM Performance Scoring\nTeam: QuantOps\nDepends on: Build dashboard for LLM performance mapping\nAuthor: Quantum",
+    "issuetype": "Task",
+    "priority": {
+      "name": "Medium"
+    },
+    "customfield_10004": 2,
+    "labels": [
+      "QuantOps",
+      "Sprint_2",
+      "Quantum"
+    ],
+    "customfield_10008": "LLM Performance Scoring"
+  }
+]

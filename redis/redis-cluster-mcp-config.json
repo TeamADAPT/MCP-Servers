@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "redis-cluster": {
+      "autoApprove": [
+        "set",
+        "get",
+        "delete",
+        "list"
+      ],
+      "disabled": false,
+      "timeout": 60,
+      "command": "node",
+      "args": [
+        "/data-nova/ax/DevOps/mcp/mcp-servers/database-mcp-servers/redis/mcp-redis-server/src/cluster-mcp.js"
+      ],
+      "env": {
+        "REDIS_HOST": "localhost",
+        "REDIS_PORT": "7000",
+        "REDIS_NAMESPACE_PREFIX": "cluster:",
+        "REDIS_CLUSTER_MODE": "true",
+        "REDIS_CLUSTER_NODES": "[{\"host\":\"localhost\",\"port\":7000},{\"host\":\"localhost\",\"port\":7001},{\"host\":\"localhost\",\"port\":7002}]"
+      },
+      "transportType": "stdio"
+    }
+  }
+}

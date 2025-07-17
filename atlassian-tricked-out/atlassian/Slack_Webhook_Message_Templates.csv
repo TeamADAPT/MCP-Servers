@@ -1,0 +1,16 @@
+Trigger,Message Format,Channel Example
+New High-Priority Task Assigned,":rocket: *New High-Priority Task Assigned!*
+>*{summary}*
+Team: {team}
+Assigned to: {assignee}
+<https://jira.adaptai.com/browse/{ticket}|View in Jira>",#novaops-tasks
+Triage Request Received,":warning: *Triage Needed!*
+>{summary}
+Priority: {priority}
+Reported by: {reporter}
+<https://jira.adaptai.com/browse/{ticket}|Review Now>",#triage-requests
+Performance Degradation Logged,":chart_with_downwards_trend: *Performance Alert Logged*
+LLM: {llm_name}
+Label: {label}
+Details: {description}
+<https://jira.adaptai.com/browse/{ticket}|Investigate>",#quantops-alerts

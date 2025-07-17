@@ -1,0 +1,72 @@
+{
+  "mcpServers": {
+    "github.com/NightTrek/Ollama-mcp": {
+      "command": "node",
+      "args": [
+        "/home/x/Documents/Cline/MCP/Ollama-mcp/build/index.js"
+      ],
+      "env": {
+        "OLLAMA_HOST": "http://127.0.0.1:11434",
+        "HOME": "/home/x",
+        "HUGGING_FACE_API_TOKEN": "YOUR_HUGGING_FACE_API_TOKEN_HERE"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "serve",
+        "create",
+        "show",
+        "run",
+        "pull",
+        "push",
+        "list",
+        "cp",
+        "rm",
+        "chat_completion",
+        "search_and_pull",
+        "hf_search_and_pull"
+      ]
+    },
+    "github.com/pashpashpash/mcp-atlassian": {
+      "command": "python",
+      "args": [
+        "-m",
+        "mcp_atlassian.server"
+      ],
+      "env": {
+        "CONFLUENCE_URL": "https://YOUR-CREDENTIALS@YOUR-DOMAIN//levelup2x.atlassian.net",
+        "JIRA_USERNAME": "chase@levelup2x.com",
+        "JIRA_API_TOKEN": "YOUR_JIRA_API_TOKEN_HERE"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "confluence_search",
+        "confluence_get_page",
+        "confluence_get_comments",
+        "confluence_create_page",
+        "confluence_create_page_from_file",
+        "confluence_attach_file",
+        "confluence_get_page_history",
+        "confluence_restore_page_version",
+        "confluence_update_page",
+        "confluence_move_page",
+        "confluence_get_page_tree",
+        "jira_get_issue",
+        "jira_search",
+        "jira_get_project_issues",
+        "jira_create_project",
+        "jira_create_issue",
+        "jira_get_issue_link_types",
+        "jira_create_issue_link",
+        "jira_update_issue",
+        "jira_transition_issue",
+        "jira_add_comment",
+        "jira_create_epic",
+        "jira_get_epic_issues",
+        "jira_update_epic_progress",
+        "jira_get_issue_attachments",
+        "jira_attach_file_to_issue",
+        "jira_get_issue_transitions"
+      ]
+    }
+  }
+}

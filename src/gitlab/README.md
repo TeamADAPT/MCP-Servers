@@ -98,50 +98,7 @@ MCP Server for the GitLab API, enabling project management, file operations, and
 ## Setup
 
 ### Personal Access Token
-[Create a GitLab Personal Access Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) with appropriate permissions:
-   - Go to User Settings > Access Tokens in GitLab
-   - Select the required scopes:
-     - `api` for full API access
-     - `read_api` for read-only access
-     - `read_repository` and `write_repository` for repository operations
-   - Create the token and save it securely
-
-### Usage with Claude Desktop
-Add the following to your `claude_desktop_config.json`:
-
-#### Docker
-```json
-{
-  "mcpServers": { 
-    "gitlab": {
-      "command": "docker",
-      "args": [
-        "run",
-        "-e",
-        "GITLAB_PERSONAL_ACCESS_TOKEN",
-        "-e",
-        "GITLAB_API_URL",
-        "mcp/gitlab"
-      ],
-      "env": {
-        "GITLAB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>",
-        "GITLAB_API_URL": "https://gitlab.com/api/v4" // Optional, for self-hosted instances
-      }
-    }
-  }
-}
-```
-
-### NPX
-
-```json
-{
-  "mcpServers": {
-    "gitlab": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-gitlab"
+[Create a GitLab Personal Access Token](https://YOUR-CREDENTIALS@YOUR-DOMAIN/server-gitlab"
       ],
       "env": {
         "GITLAB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>",

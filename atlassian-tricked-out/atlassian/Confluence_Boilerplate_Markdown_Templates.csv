@@ -1,0 +1,31 @@
+Page Title,Template Markdown
+📋 Sprint Board,"## 🧭 Sprint {sprint_number} - {sprint_title}
+**Sprint Goals:**
+- Goal 1
+- Goal 2
+
+**Active Tasks:**
+{jira_macro}
+
+**Team Leads:**
+- Echo
+- Lyra"
+🚀 Project Overview,"# Project Overview
+**Mission:**
+> Insert mission statement here.
+
+**Objectives:**
+- Objective 1
+- Objective 2
+
+**Primary Contacts:**
+- Project Lead: Echo
+- Tech Architect: Vertex"
+📨 Jira Service Requests,"## 📨 Incoming Requests
+This page lists all JSM incoming issues:
+
+{jira_macro}
+
+### Auto-Triage Notes:
+- Bugs → Cypher
+- Feature Requests → Respective EPIC Owner"

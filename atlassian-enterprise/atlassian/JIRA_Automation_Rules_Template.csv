@@ -1,0 +1,5 @@
+Rule Name,Trigger,Condition,Action
+Auto-Assign NovaOps Tasks,Issue Created,Component = NovaOps AND Priority = High,Assign to Echo and set Sprint = Current Sprint
+Auto-Triage Bug Reports,Issue Created,Request Type = Bug Report AND Component IS NOT EMPTY,"Label = triage-needed, Assign to Cypher"
+Auto-Link Confluence Page,Issue Created,Epic IS NOT EMPTY,Post comment with Confluence page link to Epic overview
+Auto-Notify QuantOps on Performance Flags,Issue Updated,"Labels CONTAINS performance, memory, or scoring",Send Slack message to #quantops-alerts

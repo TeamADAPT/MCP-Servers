@@ -1,0 +1,20 @@
+{
+  "name": "sequential-mcp-server",
+  "version": "1.0.0",
+  "description": "Sequential MCP Server - Complex Analysis & Thinking server for multi-step problem solving",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["mcp", "analysis", "thinking", "sequential", "problem-solving"],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "axios": "^1.6.0",
+    "uuid": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

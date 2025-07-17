@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Avatars",
+    "description": "Avatar-related components and services"
+  },
+  {
+    "name": "Infrastructure",
+    "description": "Infrastructure components and services"
+  },
+  {
+    "name": "Monitoring",
+    "description": "Monitoring tools and services"
+  },
+  {
+    "name": "Security",
+    "description": "Security components and services"
+  },
+  {
+    "name": "Text-to-Video",
+    "description": "Text-to-Video generation components"
+  },
+  {
+    "name": "Stakeholder UX",
+    "description": "Stakeholder user experience components"
+  },
+  {
+    "name": "Command",
+    "description": "Command and control systems"
+  },
+  {
+    "name": "Data",
+    "description": "Data management components"
+  },
+  {
+    "name": "Recording",
+    "description": "Recording and media capture systems"
+  },
+  {
+    "name": "Visualization",
+    "description": "Visualization and display systems"
+  }
+]

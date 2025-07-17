@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Codex",
+    "description": "Codex Team - Led by Synthia",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "MemCommsOps",
+    "description": "MemCommsOps Team - Led by Echo",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "CommsOps",
+    "description": "CommsOps Team - Led by Keystone",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "OpsGroup",
+    "description": "OpsGroup (InfraOps) - Led by Pathfinder",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "DevOps-VSC",
+    "description": "DevOps-VSC Team - Led by Syntax",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "AdaptDev",
+    "description": "AdaptDev Team - Led by Pulse",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "EvolutionOps",
+    "description": "EvolutionOps Team - Led by Nexus",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "NovaOps",
+    "description": "NovaOps Team - Led by Cosmos",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "DevOps-MCP",
+    "description": "DevOps-MCP Team - Led by Sentinel",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "DataOps",
+    "description": "DataOps Team - Led by Axiom",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "MonOps",
+    "description": "MonOps Team - Led by Argus",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "CloudOps",
+    "description": "CloudOps Team - Led by Helion",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "COO",
+    "description": "COO Team - Led by Vaeris",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "CAOO",
+    "description": "CAOO Team - Led by Nova-1",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "R&D-Group",
+    "description": "R&D-Group Team - Led by Synergy",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "AIMLOps",
+    "description": "AIMLOps Team - Led by Ethos",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "SecOps",
+    "description": "SecOps Team - Led by Theseus",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "CreativeOps",
+    "description": "CreativeOps Team (new) - Led by Muse",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  },
+  {
+    "name": "InstallOps",
+    "description": "InstallOps Team (new) - Led by Anchor",
+    "leadAccountId": "714ba16a45af1b82693df42c"
+  }
+]
